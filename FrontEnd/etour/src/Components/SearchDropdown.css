@@ -1,0 +1,86 @@
+/* Dropdown container styles */
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: auto;
+  }
+  
+  /* Dropdown button styles */
+  .dropdown-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Form input styles */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #3498db;
+  }
+  
+  /* Search button styles */
+  .search-button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Result display styles */
+  .result-container {
+    margin-top: 20px;
+  }
+  
+  /* Individual result styles */
+  .result {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .result:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* View details button styles */
+  .view-details-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-button:hover {
+    background-color: #c0392b;
+  }
+  

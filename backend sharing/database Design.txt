@@ -1,0 +1,96 @@
+CREATE TABLE CategoryMaster (
+    Catmaster_id INT(5) AUTO_INCREMENT PRIMARY KEY,
+    Cat_id CHAR(3) NOT NULL,
+    Cat_Name VARCHAR(255),
+    Cat_Image_Path VARCHAR(255),
+    Flag BOOLEAN
+    );
+
+
+CREATE TABLE SubCategoryMaster (
+    SubCat_id CHAR(3) PRIMARY KEY,
+    Cat_id CHAR(3) NOT NULL,
+    SubCat_Name VARCHAR(255),
+    Description TEXT,
+    SubCat_Image_Path VARCHAR(255),
+    Flag BOOLEAN,
+    
+    FOREIGN KEY (Cat_id) REFERENCES CategoryMaster(Cat_id)
+);
+
+CREATE TABLE CustomerMaster (
+    Cust_id INT AUTO_INCREMENT PRIMARY KEY,
+    Cust_Name VARCHAR(255) NOT NULL,
+    Cust_Details TEXT,
+    Username VARCHAR(20),
+    Password VARCHAR(20),
+    Mobile_No BIGINT
+);
+
+
+
+CREATE TABLE ItineraryMaster (
+    Itr_id INT AUTO_INCREMENT PRIMARY KEY,
+    Catmaster_id INT NOT NULL,
+    Day_No INT(2),
+    Itr_dtl TEXT,
+    FOREIGN KEY (Catmaster_id) REFERENCES CategoryMaster(Catmaster_id)
+);
+
+CREATE TABLE CostMaster (
+    Cost_Id INT AUTO_INCREMENT PRIMARY KEY,
+    Catmaster_id INT NOT NULL,
+    Cost DECIMAL(10, 2),
+    Single_Prsn_Cost DECIMAL(10, 2),
+    Extra_Prsn_Cost DECIMAL(10, 2),
+    Child_With_Bed DECIMAL(10, 2),
+    Child_Without_Bed DECIMAL(10, 2),
+    Valid_From DATE,
+    Valid_To DATE,
+    FOREIGN KEY (Catmaster_id) REFERENCES CategoryMaster(Catmaster_id)
+);
+
+
+CREATE TABLE DateMaster (
+    Departure_Id INT AUTO_INCREMENT PRIMARY KEY,
+    Catmaster_id INT NOT NULL,
+    Depart_Date DATE NOT NULL,
+    End_Date DATE,
+    No_of_Days INT,
+    FOREIGN KEY (Catmaster_id) REFERENCES CategoryMaster(Catmaster_id)
+);
+
+CREATE TABLE TourMaster (
+    Tour_id INT AUTO_INCREMENT PRIMARY KEY,
+    Catmaster_id INT NOT NULL,
+    Departure_id INT NOT NULL,
+    FOREIGN KEY (Catmaster_id) REFERENCES CategoryMaster(Catmaster_id),
+    FOREIGN KEY (Departure_id) REFERENCES DateMaster(Departure_Id)
+);
+
+
+CREATE TABLE BookingHeader (
+    Booking_id INT AUTO_INCREMENT PRIMARY KEY,
+    Booking_Date DATE NOT NULL,
+    Cust_id INT NOT NULL,
+    Tour_id INT NOT NULL,
+    Departure_id INT NOT NULL,
+    No_of_PAX INT NOT NULL,
+    Tour_Amount DECIMAL(10, 2) NOT NULL,
+    Taxes DECIMAL(10, 2),
+    Total_Amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (Cust_id) REFERENCES CustomerMaster(Cust_id),
+    FOREIGN KEY (Tour_id) REFERENCES TourMaster(Tour_id),
+    FOREIGN KEY (Departure_id) REFERENCES DateMaster(Departure_Id)
+);
+
+
+CREATE TABLE Passenger (
+    Pax_id INT AUTO_INCREMENT PRIMARY KEY,
+    Booking_id INT NOT NULL,
+    Pax_Name VARCHAR(255) NOT NULL,
+    Pax_Birthdate DATE,
+    Pax_Type VARCHAR(50) NOT NULL,
+    Pax_Amount DECIMAL(10, 2),
+    FOREIGN KEY (Booking_id) REFERENCES BookingHeader(Booking_id)
+);

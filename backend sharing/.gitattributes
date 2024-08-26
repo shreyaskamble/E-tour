@@ -1,0 +1,2 @@
+FrontEnd/etour/public/*.mp4 filter=lfs diff=lfs merge=lfs -text
+FrontEnd.zip filter=lfs diff=lfs merge=lfs -text

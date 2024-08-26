@@ -1,0 +1,33 @@
+/* CostMasterDetails.css */
+
+.cost-master-container {
+    padding: 2rem;
+  }
+  
+  .centered-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .cost-card {
+    margin: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .table-container {
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .cost-card {
+      width: 100%;
+    }
+  }
+  

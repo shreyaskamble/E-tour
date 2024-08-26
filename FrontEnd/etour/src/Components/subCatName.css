@@ -1,0 +1,38 @@
+/* Card container styling */
+.box {
+    height: 600px; /* Set a consistent height for the card */
+    width: 25px; /* Ensure full width of the column */
+    overflow: hidden;
+    position: relative; /* For positioning the hover effect */
+    margin-top: 50px;
+    margin-left: 30px;
+    
+}
+
+/* Container for the image */
+.img-container {
+    width:100%;
+    height: 350px; /* Set a consistent height for the image */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* For positioning the image */
+}
+
+/* Image styling */
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    transition: transform 0.5s ease; /* Smooth transition for the hover effect */
+}
+
+/* Hover effect for the card */
+.box:hover .img-container img {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+.col-md-3
+{
+    padding: 100px;
+   
+    
+}

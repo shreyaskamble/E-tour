@@ -1,0 +1,43 @@
+.itinerary-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .photo-container {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .itinerary-photo {
+    width: 400px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #555; /* Adjust the color as needed */
+  }
+
+  h4 {
+    color: #555; /* Adjust the color as needed */
+  }
+
+  
+  
+  .red-text {
+    color: red;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 10vh; /* Full viewport height */
+    text-align: center;
+  }
+  
+  

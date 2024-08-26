@@ -1,0 +1,47 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.custom-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    margin-bottom: 20px;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}

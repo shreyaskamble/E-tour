@@ -1,0 +1,50 @@
+/* LoginForm.css */
+
+.login-background {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #fff; /* White background for card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+#logn{
+  margin: 0px auto;
+}
+
+#cbdy
+{
+  width: 350px;
+}
+
+#ttl
+{
+  font-weight: bold;
+}
+  .login-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  

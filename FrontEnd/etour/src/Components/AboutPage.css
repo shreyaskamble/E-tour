@@ -1,0 +1,83 @@
+/* AboutPage.css */
+
+/* Basic reset and font settings */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header styling */
+  .about-header {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .about-header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section styling */
+  .about-section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* List styling */
+  ul {
+    padding-left: 20px;
+    font-size: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Carousel styling */
+  .carousel-container {
+    margin: 20px 0;
+  }
+  
+  .carousel-item img {
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Footer styling */
+  .about-footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  

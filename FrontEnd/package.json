@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-router-dom": "^6.26.0"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+}
+}
